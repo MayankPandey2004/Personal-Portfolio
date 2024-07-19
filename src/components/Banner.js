@@ -1,7 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { React, useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -51,7 +50,6 @@ export default function Banner() {
                                     <h1>{`Hi I'm Mayank`}</h1>
                                     <h1><span className='wrap'>{text}</span></h1>
                                     <p>I'm a computer science student proficient in C, C++, Java, Python, and web/app development using React, PHP, MySQL, and React Native. This is my portfolio...</p>
-                                    <button onClick={() => { console.log('connect') }}>Let's Connect <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>
                     </Col>
