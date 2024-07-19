@@ -6,6 +6,7 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.png';
 import navIcon3 from '../assets/img/git-hub.png';
+import navIcon4 from '../assets/img/nav-icon4.png';
 import ContactCard from '../assets/img/ContactCard.png';
 
 export default function Footer() {
@@ -31,6 +32,7 @@ export default function Footer() {
                         <div className='social-icon'>
                             <a href="https://www.linkedin.com/in/MayankPandey2004/"><img src={navIcon1} alt="Linkedin-Link" /></a>
                             <a href="https://github.com/MayankPandey2004/"><img src={navIcon3} alt="Linkedin-Link" /></a>
+                            <a href="https://x.com/TechMayank2004/"><img src={navIcon4} alt="Twitter-Link" /></a>
                             <a href="#" onClick={handleModalOpen}><img src={navIcon2} alt="Contact Card" /></a>
                         </div>
                         <p>&copy; 2024. All Right Reserved</p>
