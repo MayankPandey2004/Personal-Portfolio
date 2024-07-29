@@ -15,12 +15,12 @@ const Projects = () => {
         },
         {
             title: "AskMe App",
-            description: "using React and GoLang",
+            description: "using ReactJS and GoLang",
             imgUrl: projImg2,
         },
         {
-            title: "Business Startup",
-            description: "Design & Development",
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
             imgUrl: projImg3,
         },
         {
