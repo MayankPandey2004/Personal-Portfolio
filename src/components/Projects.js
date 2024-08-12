@@ -23,21 +23,7 @@ const Projects = () => {
             description: "using Python and discord.dev",
             imgUrl: projImg3,
         },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg1,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg2,
-        },
-        {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
-        },
+        
     ];
 
     return (
