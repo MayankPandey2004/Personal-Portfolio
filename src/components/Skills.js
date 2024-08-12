@@ -49,47 +49,47 @@ export default function Skills() {
                             </p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cppIcon} alt='C/C++' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={cppIcon} alt='C/C++' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>C++</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cIcon} alt='C/C++' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={cIcon} alt='C/C++' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>C</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={javaIcon} alt='Java' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={javaIcon} alt='Java' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>Java</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={htmlIcon} alt='HTML' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={htmlIcon} alt='HTML' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>HTML</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cssIcon} alt='CSS' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={cssIcon} alt='CSS' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>CSS</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={jsIcon} alt='JavaScript' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={jsIcon} alt='JavaScript' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>JavaScript</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={tsIcon} alt='TypeScript' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={tsIcon} alt='TypeScript' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>TypeScript</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={mysqlIcon} alt='MySQL' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={mysqlIcon} alt='MySQL' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>MySQL</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={reactjsIcon} alt='ReactJS' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={reactjsIcon} alt='ReactJS' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>ReactJS</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={reactnativeIcon} alt='React Native' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={reactnativeIcon} alt='React Native' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>React Native</h3>
                                 </div>
                                 <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={bootstrapIcon} alt='Bootstrap' style={{ maxWidth: '100px', height: '100px', marginBottom: '20px' }} />
+                                    <img src={bootstrapIcon} alt='Bootstrap' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
                                     <h3>Bootstrap</h3>
                                 </div>
                             </Carousel>
