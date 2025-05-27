@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { React, useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import headerImg from '../assets/img/header-img.svg'
+import headerImg from '../assets/img/header-img.gif'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 

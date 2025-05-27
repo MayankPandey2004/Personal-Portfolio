@@ -1,16 +1,32 @@
-import React from 'react'
-import { Col } from 'react-bootstrap'
+import "./ProjectCard.css"
 
-export default function ProjectCard({ title, description, imgUrl }) {
-    return (
-        <Col sm={6} md={4}>
-            <div className='proj-imgbx'>
-                <img src={imgUrl} style={{height:"33vh"}} alt="project-card"/>
-                <div className='proj-txtx'>
-                    <h4>{title}</h4>
-                    <span>{description}</span>
-                </div>
+const ProjectCard = ({ title, description, imgUrl, demoUrl, githubUrl, index }) => {
+  return (
+    <div
+      className="project-card"
+      style={{
+        animationDelay: `${index * 100}ms`,
+      }}
+    >
+      <div className="project-img-container">
+        <img src={imgUrl || "/placeholder.svg"} alt={title} className="project-img" />
+        <div className="project-overlay">
+          <div className="project-content">
+            <h4 className="project-title">{title}</h4>
+            <span className="project-description">{description}</span>
+            <div className="project-links">
+              {demoUrl !== "none" && <a href={demoUrl} className="project-link demo-link">
+                <span>🔗</span> Live Demo
+              </a>}
+              <a href={githubUrl} className="project-link github-link">
+                <span>📁</span> GitHub
+              </a>
             </div>
-        </Col>
-    )
+          </div>
+        </div>
+      </div>
+    </div>
+  )
 }
+
+export default ProjectCard

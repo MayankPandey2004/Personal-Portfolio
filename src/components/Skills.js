@@ -1,103 +1,208 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import cppIcon from '../assets/img/cpp-icon.png'; 
-import cIcon from '../assets/img/c-icon.png';    // Example path
-import javaIcon from '../assets/img/java-icon.svg';  // Example path
-import htmlIcon from '../assets/img/html-icon.png';  // Example path
-import cssIcon from '../assets/img/css-icon.png';    // Example path
-import jsIcon from '../assets/img/javascript-icon.png'; // Example path
-import tsIcon from '../assets/img/typescript-icon.png'; // Example path
-import mysqlIcon from '../assets/img/mysql-icon.png'; // Example path
-import reactjsIcon from '../assets/img/reactjs-icon.png'; // Example path
-import reactnativeIcon from '../assets/img/reactnative-icon.svg'; // Example path
-import bootstrapIcon from '../assets/img/bootstrap-icon.svg'; // Example path
-import colorSharp from '../assets/img/color-sharp.png';
+"use client"
 
-export default function Skills() {
-    const responsive = {
-        superLargeDesktop: {
-            breakpoint: { max: 4000, min: 3000 },
-            items: 5
+import { useState } from "react"
+import "./Skills.css"
+
+const Skills = () => {
+    const [selectedCategory, setSelectedCategory] = useState("All")
+    const [hoveredSkill, setHoveredSkill] = useState(null)
+
+    const skills = [
+        {
+            name: "C++",
+            category: "Programming",
+            level: "Advanced",
+            color: "#3b82f6",
+            description: "System programming and algorithms",
+            icon: "💻",
         },
-        desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 3
+        {
+            name: "C",
+            category: "Programming",
+            level: "Advanced",
+            color: "#6b7280",
+            description: "Low-level programming",
+            icon: "⚡",
         },
-        tablet: {
-            breakpoint: { max: 1024, min: 464 },
-            items: 2
+        {
+            name: "Java",
+            category: "Programming",
+            level: "Intermediate",
+            color: "#f97316",
+            description: "Object-oriented programming",
+            icon: "☕",
         },
-        mobile: {
-            breakpoint: { max: 464, min: 0 },
-            items: 1
+        {
+            name: "HTML",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#ea580c",
+            description: "Semantic markup",
+            icon: "🌐",
+        },
+        {
+            name: "CSS",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#2563eb",
+            description: "Styling and animations",
+            icon: "🎨",
+        },
+        {
+            name: "JavaScript",
+            category: "Programming",
+            level: "Advanced",
+            color: "#eab308",
+            description: "Dynamic web development",
+            icon: "⚡",
+        },
+        {
+            name: "TypeScript",
+            category: "Programming",
+            level: "Intermediate",
+            color: "#1d4ed8",
+            description: "Type-safe JavaScript",
+            icon: "📘",
+        },
+        {
+            name: "MySQL",
+            category: "Database",
+            level: "Intermediate",
+            color: "#0891b2",
+            description: "Relational database management",
+            icon: "🗄️",
+        },
+        {
+            name: "React",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#06b6d4",
+            description: "Component-based UI library",
+            icon: "⚛️",
+        },
+        {
+            name: "React Native",
+            category: "Mobile",
+            level: "Intermediate",
+            color: "#9333ea",
+            description: "Cross-platform mobile apps",
+            icon: "📱",
+        },
+        {
+            name: "Bootstrap",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#7c3aed",
+            description: "CSS framework",
+            icon: "🅱️",
+        },
+        {
+            name: "Node.js",
+            category: "Backend",
+            level: "Intermediate",
+            color: "#16a34a",
+            description: "Server-side JavaScript",
+            icon: "🟢",
+        },
+    ]
+
+    const categories = ["All", "Programming", "Frontend", "Backend", "Database", "Mobile"]
+
+    const filteredSkills =
+        selectedCategory === "All" ? skills : skills.filter((skill) => skill.category === selectedCategory)
+
+    const getLevelClass = (level) => {
+        switch (level) {
+            case "Advanced":
+                return "level-advanced"
+            case "Intermediate":
+                return "level-intermediate"
+            case "Beginner":
+                return "level-beginner"
+            default:
+                return "level-default"
         }
-    };
+    }
 
     return (
-        <section className='skill' id='skills'>
-            <Container style={{paddingTop:200,paddingBottom:100}}>
-                <Row>
-                    <Col>
-                        <div className='skill-bx'>
-                            <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', fontWeight: 'bold' }}>Skills</h2>
-                            <p style={{ fontSize: '1.1rem', marginBottom: '3rem' }}>
-                                Proficient in various programming languages and development tools, ensuring high-quality software solutions.
-                            </p>
-                            <Carousel responsive={responsive} infinite={true} className='skill-slider'>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cppIcon} alt='C/C++' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>C++</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cIcon} alt='C/C++' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>C</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={javaIcon} alt='Java' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>Java</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={htmlIcon} alt='HTML' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>HTML</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={cssIcon} alt='CSS' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>CSS</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={jsIcon} alt='JavaScript' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>JavaScript</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={tsIcon} alt='TypeScript' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>TypeScript</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={mysqlIcon} alt='MySQL' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>MySQL</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={reactjsIcon} alt='ReactJS' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>ReactJS</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={reactnativeIcon} alt='React Native' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>React Native</h3>
-                                </div>
-                                <div className='item' style={{ padding: '20px', textAlign: 'center' }}>
-                                    <img src={bootstrapIcon} alt='Bootstrap' style={{ maxWidth: '110px', height: '100px', marginBottom: '20px' }} />
-                                    <h3>Bootstrap</h3>
-                                </div>
-                            </Carousel>
+        <section className="skills-section" id='skills'>
+            <div className="skills-background">
+                <div className="bg-decoration bg-decoration-1"></div>
+                <div className="bg-decoration bg-decoration-2"></div>
+            </div>
+
+            <div className="skills-container">
+                {/* Header */}
+                <div className="skills-header">
+                    <h2 className="skills-title">Technical Skills</h2>
+                    <p className="skills-description">
+                        Proficient in various programming languages and development tools, ensuring high-quality software solutions
+                        across the full stack.
+                    </p>
+                </div>
+
+                {/* Category Filter */}
+                <div className="category-filter">
+                    {categories.map((category) => (
+                        <button
+                            key={category}
+                            onClick={() => setSelectedCategory(category)}
+                            className={`category-btn ${selectedCategory === category ? "active" : ""}`}
+                        >
+                            {category}
+                        </button>
+                    ))}
+                </div>
+
+                {/* Skills Grid */}
+                <div className="skills-grid">
+                    {filteredSkills.map((skill, index) => (
+                        <div
+                            key={skill.name}
+                            className={`skill-card ${hoveredSkill === skill.name ? "hovered" : ""}`}
+                            onMouseEnter={() => setHoveredSkill(skill.name)}
+                            onMouseLeave={() => setHoveredSkill(null)}
+                            style={{
+                                animationDelay: `${index * 100}ms`,
+                            }}
+                        >
+                            <div className="skill-icon" style={{ backgroundColor: skill.color }}>
+                                <span className="icon-emoji">{skill.icon}</span>
+                            </div>
+
+                            <h3 className="skill-name">{skill.name}</h3>
+                            <p className="skill-description">{skill.description}</p>
+
+                            <div className="skill-badges">
+                                <span className={`badge ${getLevelClass(skill.level)}`}>{skill.level}</span>
+                                <span className="badge category-badge">{skill.category}</span>
+                            </div>
                         </div>
-                    </Col>
-                </Row>
-            </Container>
-            <img className='background-image-left' src={colorSharp} style={{ position: 'absolute', left: 0, bottom: 0, zIndex: -1, width: '50%', height: 'auto' }} />
+                    ))}
+                </div>
+
+                {/* Stats Section */}
+                <div className="stats-section">
+                    <div className="stat-item">
+                        <div className="stat-number">12+</div>
+                        <div className="stat-label">Technologies</div>
+                    </div>
+                    <div className="stat-item">
+                        <div className="stat-number">5+</div>
+                        <div className="stat-label">Categories</div>
+                    </div>
+                    <div className="stat-item">
+                        <div className="stat-number">3+</div>
+                        <div className="stat-label">Years Experience</div>
+                    </div>
+                    <div className="stat-item">
+                        <div className="stat-number">50+</div>
+                        <div className="stat-label">Projects</div>
+                    </div>
+                </div>
+            </div>
         </section>
-    );
+    )
 }
+
+export default Skills
