@@ -65,11 +65,6 @@ const Projects = () => {
             description: "using Python and discord.dev",
             imgUrl: projImg4,
         },
-        {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
-            imgUrl: projImg4,
-        },
 
         
     ];
