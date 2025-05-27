@@ -21,14 +21,14 @@ const Projects = () => {
             imgUrl: projImg4,
         },
         {
-            title: "Leads Management System",
-            description: "using React Natice and Go",
-            imgUrl: projImg5,
-        },
-        {
             title: "AskMe App",
             description: "using React.js and Go",
             imgUrl: projImg2,
+        },
+        {
+            title: "Leads Management System",
+            description: "using React Natice and Go",
+            imgUrl: projImg5,
         },
         {
             title: "DKeeper",
