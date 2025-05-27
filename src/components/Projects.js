@@ -16,45 +16,45 @@ const Projects = () => {
 
     const projects = [
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "AWS CloudLearn(LMS)",
+            description: "using Next.js, AWS, Vercel, Clerk, Stripe",
             imgUrl: projImg4,
         },
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "Leads Management System",
+            description: "using React Natice and Go",
             imgUrl: projImg5,
         },
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "AskMe App",
+            description: "using React.js and Go",
+            imgUrl: projImg2,
+        },
+        {
+            title: "DKeeper",
+            description: "using Motoko, Js and CSS",
             imgUrl: projImg7,
         },
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "Realtime Finger Counter",
+            description: "using Python and OpenCV",
             imgUrl: projImg8,
         },
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "Realtime WebCam Drawing",
+            description: "using Python and OpenCV",
             imgUrl: projImg9,
         },
         {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
+            title: "Custom Certificate Generator",
+            description: "using Next.js and Go",
             imgUrl: projImg6,
         },
         {
             title: "Chat App",
             description: "using React Native and Firebase",
             imgUrl: projImg1,
-        },
-        {
-            title: "AskMe App",
-            description: "using ReactJS and GoLang",
-            imgUrl: projImg2,
-        },
+        },       
         {
             title: "Discord Music Bot",
             description: "using Python and discord.dev",
