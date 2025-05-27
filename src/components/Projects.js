@@ -4,12 +4,47 @@ import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
 import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img6.png";
+import projImg8 from "../assets/img/project-img6.png";
+import projImg9 from "../assets/img/project-img6.png";
 
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 const Projects = () => {
 
     const projects = [
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg4,
+        },
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg5,
+        },
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg7,
+        },
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg8,
+        },
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg9,
+        },
+        {
+            title: "Discord Music Bot",
+            description: "using Python and discord.dev",
+            imgUrl: projImg6,
+        },
         {
             title: "Chat App",
             description: "using React Native and Firebase",
@@ -28,17 +63,12 @@ const Projects = () => {
         {
             title: "Discord Music Bot",
             description: "using Python and discord.dev",
-            imgUrl: projImg3,
+            imgUrl: projImg4,
         },
         {
             title: "Discord Music Bot",
             description: "using Python and discord.dev",
-            imgUrl: projImg3,
-        },
-        {
-            title: "Discord Music Bot",
-            description: "using Python and discord.dev",
-            imgUrl: projImg3,
+            imgUrl: projImg4,
         },
 
         
