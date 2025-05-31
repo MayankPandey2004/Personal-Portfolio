@@ -1,8 +1,5 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.png';
 import navIcon3 from '../assets/img/git-hub.png';
@@ -26,16 +23,16 @@ export default function Footer() {
             <Container style={{ paddingTop: 50 }}>
                 <Row className='align-item-center'>
                     <Col sm={6}>
-                        <img src={logo} />
+                       
                     </Col>
                     <Col sm={6} className='text-center text-sm-end'>
                         <div className='social-icon'>
                             <a href="https://www.linkedin.com/in/MayankPandey2004/"><img src={navIcon1} alt="Linkedin-Link" /></a>
                             <a href="https://github.com/MayankPandey2004/"><img src={navIcon3} alt="Linkedin-Link" /></a>
                             <a href="https://x.com/TechMayank2004/"><img src={navIcon4} alt="Twitter-Link" /></a>
-                            <a href="#" onClick={handleModalOpen}><img src={navIcon2} alt="Contact Card" /></a>
+                            <a href="#/" onClick={handleModalOpen}><img src={navIcon2} alt="Contact Card" /></a>
                         </div>
-                        <p>&copy; 2024. All Right Reserved</p>
+                        <p>&copy; {new Date().getFullYear()} All Right Reserved</p>
                     </Col>
                 </Row>
             </Container>

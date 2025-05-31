@@ -18,9 +18,9 @@ const ProjectCard = ({ title, description, imgUrl, demoUrl, githubUrl, index }) 
               {demoUrl !== "none" && <a href={demoUrl} className="project-link demo-link">
                 <span>🔗</span> Live Demo
               </a>}
-              <a href={githubUrl} className="project-link github-link">
+              {githubUrl !== "none" && <a href={githubUrl} className="project-link github-link">
                 <span>📁</span> GitHub
-              </a>
+              </a>}
             </div>
           </div>
         </div>
