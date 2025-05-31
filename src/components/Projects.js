@@ -61,7 +61,7 @@ const Projects = () => {
       description: "using Next.js and Go",
       imgUrl: projImg6,
       demoUrl: "none",
-      githubUrl: "https://github.com/MayankPandey2004/Certificate-Generator-frontend",
+      githubUrl: "https://github.com/MayankPandey2004/Certificate-Generator",
     },
     {
       title: "Chat App",
