@@ -91,16 +91,33 @@ const Projects = () => {
   const [activeTab, setActiveTab] = useState("all")
   const [visibleProjects, setVisibleProjects] = useState(6)
 
-  const categories = ["all", "web", "mobile", "ai/ml", "other"]
+  const categories = ["all", "web", "mobile", "ai/ml", "game", "bots"]
 
   const filterProjects = (category) => {
     if (category === "all") return projects
 
     const categoryMap = {
-      web: ["AWS CloudLearn(LMS)", "AskMe App", "DKeeper", "Custom Certificate Generator"],
-      mobile: ["Leads Management System", "Chat App"],
-      "ai/ml": ["Realtime Finger Counter", "Realtime WebCam Drawing"],
-      other: ["Discord Music Bot"],
+      web: [
+        "AWS CloudLearn(LMS)",
+        "AskMe App",
+        "DKeeper",
+        "Leads Management System",
+        "Custom Certificate Generator"
+      ],
+      mobile: [
+        "Leads Management System",
+        "Chat App"
+      ],
+      "ai/ml": [
+        "Realtime Finger Counter",
+        "Realtime WebCam Drawing"
+      ],
+      game: [
+        "RobinTheMerry Slot-Machine"
+      ],
+      bots: [
+        "Discord Music Bot"
+      ],
     }
 
     return projects.filter((project) => categoryMap[category]?.includes(project.title))

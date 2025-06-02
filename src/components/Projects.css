@@ -209,8 +209,8 @@
   /* Responsive Design for Tabs */
   .projects-tabs {
     flex-wrap: wrap;
-    max-width: 400px;
-    gap: 2px;
+    max-width: 450px;
+    gap: 3px;
     padding: 2px;
   }
 
