@@ -12,7 +12,7 @@ import projImg10 from "../assets/img/project-img10.png";
 
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
-import "./Projects.css"
+import "./Styles/Projects.css"
 
 const Projects = () => {
   const projects = [

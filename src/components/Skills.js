@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import "./Skills.css"
+import "./Styles/Skills.css"
 
 const Skills = () => {
     const [selectedCategory, setSelectedCategory] = useState("All")

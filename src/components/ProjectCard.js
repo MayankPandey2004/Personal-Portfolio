@@ -1,4 +1,4 @@
-import "./ProjectCard.css"
+import "./Styles/ProjectCard.css"
 
 const ProjectCard = ({ title, description, imgUrl, demoUrl, githubUrl, index }) => {
   return (
