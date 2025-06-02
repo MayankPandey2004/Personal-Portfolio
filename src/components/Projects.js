@@ -8,6 +8,8 @@ import projImg6 from "../assets/img/project-img6.png";
 import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.png";
+
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
 import "./Projects.css"
@@ -34,6 +36,13 @@ const Projects = () => {
       imgUrl: projImg5,
       demoUrl: "none",
       githubUrl: "none",
+    },
+    {
+      title: "RobinTheMerry Slot-Machine",
+      description: "using SpringBoot and Javascript",
+      imgUrl: projImg10,
+      demoUrl: "none",
+      githubUrl: "https://github.com/MayankPandey2004/SpringBoot-SlotMachine",
     },
     {
       title: "Blockchain DKeeper",
