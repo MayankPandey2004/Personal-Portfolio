@@ -9,6 +9,7 @@ import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
 
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
@@ -43,6 +44,13 @@ const Projects = () => {
       imgUrl: projImg10,
       demoUrl: "none",
       githubUrl: "https://github.com/MayankPandey2004/SpringBoot-SlotMachine",
+    },
+    {
+      title: "CupCakeCandy Matching-Clusters",
+      description: "using SpringBoot and Javascript",
+      imgUrl: projImg11,
+      demoUrl: "none",
+      githubUrl: "https://github.com/MayankPandey2004/SpringBoot-MatchingClusters",
     },
     {
       title: "Blockchain DKeeper",
@@ -113,7 +121,8 @@ const Projects = () => {
         "Realtime WebCam Drawing"
       ],
       game: [
-        "RobinTheMerry Slot-Machine"
+        "RobinTheMerry Slot-Machine",
+        "CupCakeCandy Matching-Clusters"
       ],
       bots: [
         "Discord Music Bot"
