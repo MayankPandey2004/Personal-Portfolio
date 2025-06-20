@@ -23,6 +23,8 @@ const Contact = () => {
         e.preventDefault();
         setButtonText("Sending...");
 
+        const { firstName, lastName, email, phone, message } = formDetails;
+        
         const templateParams = {
             firstName: formDetails.firstName,
             lastName: formDetails.lastName,
@@ -31,6 +33,17 @@ const Contact = () => {
             message: formDetails.message,
         };
 
+        if (!firstName || !lastName || !email || !phone || !message) {
+            setStatus({ success: false, message: 'Please fill in all fields.' });
+            return;
+        }
+
+        const phoneRegex = /^\+?\d{10,15}$/; // Allows + and 10–15 digits
+        if (!phoneRegex.test(phone)) {
+            setStatus({ success: false, message: 'Please enter a valid phone number (10–15 digits).' });
+            setButtonText("Send");
+            return;
+        }
 
         try {
             await emailjs.send(
