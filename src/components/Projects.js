@@ -53,6 +53,13 @@ const Projects = () => {
       githubUrl: "https://github.com/MayankPandey2004/SpringBoot-SlotMachine",
     },
     {
+      title: "CupCakeCandy Matching-Clusters",
+      description: "using SpringBoot and Javascript",
+      imgUrl: projImg11,
+      demoUrl: "none",
+      githubUrl: "https://github.com/MayankPandey2004/SpringBoot-MatchingClusters",
+    },
+    {
       title: "Blockchain DKeeper",
       description: "using Motoko, Js and CSS",
       imgUrl: projImg7,
@@ -121,7 +128,8 @@ const Projects = () => {
         "Realtime WebCam Drawing"
       ],
       game: [
-        "RobinTheMerry Slot-Machine"
+        "RobinTheMerry Slot-Machine",
+        "CupCakeCandy Matching-Clusters"
       ],
       bots: [
         "Discord Music Bot"
