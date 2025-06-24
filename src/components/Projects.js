@@ -115,6 +115,7 @@ const Projects = () => {
       web: [
         "AWS CloudLearn(LMS)",
         "AskMe App",
+        "MERN Predictive-Dashboard",
         "DKeeper",
         "Leads Management System",
         "Custom Certificate Generator"
