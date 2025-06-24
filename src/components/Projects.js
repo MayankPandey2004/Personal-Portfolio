@@ -9,6 +9,7 @@ import projImg7 from "../assets/img/project-img7.png";
 import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
 
 import { useState } from "react"
 import ProjectCard from "./ProjectCard"
@@ -29,6 +30,13 @@ const Projects = () => {
       imgUrl: projImg2,
       demoUrl: "none",
       githubUrl: "https://github.com/MayankPandey2004/AskMe-Clone",
+    },
+    {
+      title: "MERN Predictive-Dashboard",
+      description: "using ReactJs(VITE+Ts), NodeJs, ExpressJs, MongoDB, Render",
+      imgUrl: projImg11,
+      demoUrl: "https://predictive-dashboard-client.onrender.com/",
+      githubUrl: "https://github.com/MayankPandey2004/Predictive-Dashboard",
     },
     {
       title: "Leads Management System",
