@@ -8,35 +8,49 @@ import TrackVisibility from 'react-on-screen';
 export default function Banner() {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "App Developer", "UI/UX Designer"];
+    const toRotate = ["AWS Certified SA", "Full Stack Developer", "Native App Developer"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(150); 
+    const [pause, setPause] = useState(false);
     const period = 2000;
 
     useEffect(() => {
-        let ticker = setInterval(() => {
+        if (pause) return;
+
+        const timeout = setTimeout(() => {
             tick();
-        }, delta)
-        return () => { clearInterval(ticker) }
-    }, [text])
+        }, delta);
+
+        return () => clearTimeout(timeout);
+    }, [text, pause]);
 
     const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+        const i = loopNum % toRotate.length;
+        const fullText = toRotate[i];
+        const updatedText = isDeleting
+            ? fullText.substring(0, text.length - 1)
+            : fullText.substring(0, text.length + 1);
+
         setText(updatedText);
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2)
-        }
+
         if (!isDeleting && updatedText === fullText) {
-            setIsDeleting(true);
-            setDelta(period);
+            setPause(true);
+            setTimeout(() => {
+                setIsDeleting(true);
+                setPause(false);
+            }, period);
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
         }
-    }
+
+        // Adjust typing speed
+        if (isDeleting) {
+            setDelta(75); // faster deleting
+        } else {
+            setDelta(150); // slower typing
+        }
+    };
 
     return (
         <section className='banner' id='home'>
@@ -45,7 +59,7 @@ export default function Banner() {
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animated_animated animate__fadeIn" : ""}>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                                     <span className='tagline'>Welcome to my Portfolio</span>
                                     <h1>{`Hi I'm Mayank`}</h1>
                                     <h1><span className='wrap'>{text}</span></h1>
@@ -54,10 +68,10 @@ export default function Banner() {
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header-Image" />
+                        <img src={headerImg} style={{ position: 'relative', bottom: 100 }} alt="Header-Image" />
                     </Col>
                 </Row>
             </Container>
         </section>
-    )
+    );
 }
