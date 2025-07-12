@@ -63,7 +63,7 @@ export default function Banner() {
                                     <span className='tagline'>Welcome to my Portfolio</span>
                                     <h1>{`Hi I'm Mayank`}</h1>
                                     <h1><span className='wrap'>{text}</span></h1>
-                                    <p>I'm a computer science student proficient in C, C++, Java, Python, and web/app development using React, PHP, MySQL, and React Native. This is my portfolio...</p>
+                                    <p>I'm a computer science student proficient in C, C++, Java, Python, and web/app development using React, MySQL, MongoDB, Springboot and React Native. This is my portfolio...</p>
                                 </div>}
                         </TrackVisibility>
                     </Col>
