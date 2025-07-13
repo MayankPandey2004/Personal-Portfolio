@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       title: "MERN Predictive-Dashboard",
-      description: "using ReactJs(VITE+Ts), NodeJs, ExpressJs, MongoDB, Render",
+      description: "using ReactJs(VITE+Ts), Python, NodeJs, ExpressJs, MongoDB, Render",
       imgUrl: projImg12,
       demoUrl: "https://predictive-dashboard-client.onrender.com/",
       githubUrl: "https://github.com/MayankPandey2004/Predictive-Dashboard",
