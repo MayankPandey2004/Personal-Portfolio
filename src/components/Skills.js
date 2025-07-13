@@ -56,8 +56,17 @@ const Skills = () => {
             level: "Beginner",
             color: "#10b981",
             description: "Concurrency and system programming",
-            icon: "🐹",
+            icon: "🌀", // Replaced 🐹 with 🌀 for clarity
         },
+        {
+            name: "Spring Boot",
+            category: "Backend",
+            level: "Intermediate",
+            color: "#6db33f",
+            description: "Java-based framework for building REST APIs",
+            icon: "🌱", 
+        },
+
         {
             name: "Python",
             category: "Programming",
