@@ -126,6 +126,7 @@ const Projects = () => {
         "Chat App"
       ],
       "ai/ml": [
+        "MERN Predictive-Dashboard",
         "Realtime Finger Counter",
         "Realtime WebCam Drawing"
       ],
