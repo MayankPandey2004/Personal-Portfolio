@@ -8,6 +8,8 @@ const Skills = () => {
     const [hoveredSkill, setHoveredSkill] = useState(null)
 
     const skills = [
+        // --- Existing skills ---
+
         {
             name: "C++",
             category: "Programming",
@@ -33,22 +35,6 @@ const Skills = () => {
             icon: "☕",
         },
         {
-            name: "HTML",
-            category: "Frontend",
-            level: "Advanced",
-            color: "#ea580c",
-            description: "Semantic markup",
-            icon: "🌐",
-        },
-        {
-            name: "CSS",
-            category: "Frontend",
-            level: "Advanced",
-            color: "#2563eb",
-            description: "Styling and animations",
-            icon: "🎨",
-        },
-        {
             name: "JavaScript",
             category: "Programming",
             level: "Advanced",
@@ -65,12 +51,36 @@ const Skills = () => {
             icon: "📘",
         },
         {
-            name: "MySQL",
-            category: "Database",
-            level: "Intermediate",
-            color: "#0891b2",
-            description: "Relational database management",
-            icon: "🗄️",
+            name: "Go",
+            category: "Programming",
+            level: "Beginner",
+            color: "#10b981",
+            description: "Concurrency and system programming",
+            icon: "🐹",
+        },
+        {
+            name: "Python",
+            category: "Programming",
+            level: "Advanced",
+            color: "#ffb703",
+            description: "Scripting, automation, and machine learning",
+            icon: "🐍",
+        },
+        {
+            name: "HTML",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#ea580c",
+            description: "Semantic markup",
+            icon: "🌐",
+        },
+        {
+            name: "CSS",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#2563eb",
+            description: "Styling and animations",
+            icon: "🎨",
         },
         {
             name: "React",
@@ -81,12 +91,20 @@ const Skills = () => {
             icon: "⚛️",
         },
         {
-            name: "React Native",
-            category: "Mobile",
+            name: "Next.js",
+            category: "Frontend",
             level: "Intermediate",
-            color: "#9333ea",
-            description: "Cross-platform mobile apps",
-            icon: "📱",
+            color: "#000000",
+            description: "React framework for SSR & static sites",
+            icon: "⏭️",
+        },
+        {
+            name: "Tailwind CSS",
+            category: "Frontend",
+            level: "Advanced",
+            color: "#38bdf8",
+            description: "Utility-first CSS framework",
+            icon: "🌬️",
         },
         {
             name: "Bootstrap",
@@ -97,6 +115,14 @@ const Skills = () => {
             icon: "🅱️",
         },
         {
+            name: "React Native",
+            category: "Mobile",
+            level: "Intermediate",
+            color: "#9333ea",
+            description: "Cross-platform mobile apps",
+            icon: "📱",
+        },
+        {
             name: "Node.js",
             category: "Backend",
             level: "Intermediate",
@@ -104,9 +130,57 @@ const Skills = () => {
             description: "Server-side JavaScript",
             icon: "🟢",
         },
+        {
+            name: "MySQL",
+            category: "Database",
+            level: "Intermediate",
+            color: "#0891b2",
+            description: "Relational database management",
+            icon: "🗄️",
+        },
+        {
+            name: "Firebase",
+            category: "Backend",
+            level: "Intermediate",
+            color: "#ff6f00",
+            description: "Realtime database and authentication",
+            icon: "🔥",
+        },
+        {
+            name: "Git",
+            category: "DevOps",
+            level: "Advanced",
+            color: "#f05033",
+            description: "Version control system",
+            icon: "🔧",
+        },
+        {
+            name: "Docker",
+            category: "DevOps",
+            level: "Intermediate",
+            color: "#0db7ed",
+            description: "Containerization platform",
+            icon: "🐳",
+        },
+        {
+            name: "Kubernetes",
+            category: "DevOps",
+            level: "Beginner",
+            color: "#326ce5",
+            description: "Container orchestration",
+            icon: "☸️",
+        },
+        {
+            name: "AWS",
+            category: "DevOps",
+            level: "Intermediate",
+            color: "#ff9900",
+            description: "Cloud infrastructure and deployment",
+            icon: "☁️",
+        },
     ]
 
-    const categories = ["All", "Programming", "Frontend", "Backend", "Database", "Mobile"]
+    const categories = ["All", "Programming", "Frontend", "Backend", "Database", "Mobile", "DevOps"]
 
     const filteredSkills =
         selectedCategory === "All" ? skills : skills.filter((skill) => skill.category === selectedCategory)
