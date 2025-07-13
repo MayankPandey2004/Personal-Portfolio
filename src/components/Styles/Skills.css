@@ -345,3 +345,23 @@
     grid-template-columns: 1fr;
   }
 }
+
+.show-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-more-btn {
+  background-color: #1f2937;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #3b82f6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background-color: #3b82f6;
+  color: white;
+}

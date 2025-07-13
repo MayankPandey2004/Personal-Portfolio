@@ -6,10 +6,17 @@ import "./Styles/Skills.css"
 const Skills = () => {
     const [selectedCategory, setSelectedCategory] = useState("All")
     const [hoveredSkill, setHoveredSkill] = useState(null)
+    const [visibleCount, setVisibleCount] = useState(12)
+
+    const toggleVisibleCount = () => {
+        if (visibleCount === 12) {
+            setVisibleCount(filteredSkills.length)
+        } else {
+            setVisibleCount(12)
+        }
+    }
 
     const skills = [
-        // --- Existing skills ---
-
         {
             name: "C++",
             category: "Programming",
@@ -56,7 +63,7 @@ const Skills = () => {
             level: "Beginner",
             color: "#10b981",
             description: "Concurrency and system programming",
-            icon: "🌀", // Replaced 🐹 with 🌀 for clarity
+            icon: "🌀",
         },
         {
             name: "Spring Boot",
@@ -64,9 +71,8 @@ const Skills = () => {
             level: "Intermediate",
             color: "#6db33f",
             description: "Java-based framework for building REST APIs",
-            icon: "🌱", 
+            icon: "🌱",
         },
-
         {
             name: "Python",
             category: "Programming",
@@ -229,7 +235,10 @@ const Skills = () => {
                     {categories.map((category) => (
                         <button
                             key={category}
-                            onClick={() => setSelectedCategory(category)}
+                            onClick={() => {
+                                setSelectedCategory(category)
+                                setVisibleCount(12)
+                            }}
                             className={`category-btn ${selectedCategory === category ? "active" : ""}`}
                         >
                             {category}
@@ -239,7 +248,7 @@ const Skills = () => {
 
                 {/* Skills Grid */}
                 <div className="skills-grid">
-                    {filteredSkills.map((skill, index) => (
+                    {filteredSkills.slice(0, visibleCount).map((skill, index) => (
                         <div
                             key={skill.name}
                             className={`skill-card ${hoveredSkill === skill.name ? "hovered" : ""}`}
@@ -264,14 +273,23 @@ const Skills = () => {
                     ))}
                 </div>
 
+                {/* Show More / Show Less */}
+                {filteredSkills.length > 12 && (
+                    <div className="show-more-container">
+                        <button className="show-more-btn" onClick={toggleVisibleCount}>
+                            {visibleCount === 12 ? "Show More" : "Show Less"}
+                        </button>
+                    </div>
+                )}
+
                 {/* Stats Section */}
                 <div className="stats-section">
                     <div className="stat-item">
-                        <div className="stat-number">12+</div>
+                        <div className="stat-number">20+</div>
                         <div className="stat-label">Technologies</div>
                     </div>
                     <div className="stat-item">
-                        <div className="stat-number">5+</div>
+                        <div className="stat-number">7+</div>
                         <div className="stat-label">Categories</div>
                     </div>
                     <div className="stat-item">
