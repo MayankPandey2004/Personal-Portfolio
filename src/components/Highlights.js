@@ -3,32 +3,32 @@
 import "./Styles/Highlights.css"
 
 const highlights = [
-  {
-    title: "Work Experience",
-    subtitle: "Interned at 3 Companies",
-    description: "Acquired hands-on experience in full-stack development, game development, and mobile app development through internships at three companies.",
-    icon: "💼", 
-  },
-  {
-    title: "AWS-SAA",
-    subtitle: "AWS Certified Solutions Architect – Associate",
-    description: "Achieved the AWS Solutions Architect – Associate certification, demonstrating expertise in designing distributed systems on AWS.",
-    icon: "☁️", 
-    button: { text: "View Certificate", link: "https://www.credly.com/badges/6efe0873-f368-45e6-80cb-9b822ce9426c/linked_in_profile" },
-  },
-//   {
-//     title: "AI-900",
-//     subtitle: "Microsoft Certified: AI Fundamentals",
-//     description: "Earned the Microsoft AI-900 certification, showcasing foundational knowledge in AI and machine learning concepts on Azure.",
-//     icon: "🤖",
-//     button: { text: "View Certificate", link: "#" },
-//   },
-  {
-    title: "Top 10",
-    subtitle: "Hackathon Finalist",
-    description: "Recognized as one of the Top 10 finalists in the Code4Change 2.0 Hackathon at VIT, for an innovative and impactful tech solution.",
-    icon: "🏆", 
-  },
+    {
+        title: "Work Experience",
+        subtitle: "Interned at 3 Companies",
+        description: "Acquired hands-on experience in full-stack development, game development, and mobile app development through internships at three companies.",
+        icon: "💼",
+    },
+    {
+        title: "AWS-SAA",
+        subtitle: "AWS Certified Solutions Architect – Associate",
+        description: "Achieved the AWS Solutions Architect – Associate certification, demonstrating expertise in designing distributed systems on AWS.",
+        icon: "☁️",
+        button: { text: "View Certificate", link: "https://www.credly.com/badges/6efe0873-f368-45e6-80cb-9b822ce9426c/linked_in_profile" },
+    },
+    //   {
+    //     title: "AI-900",
+    //     subtitle: "Microsoft Certified: AI Fundamentals",
+    //     description: "Earned the Microsoft AI-900 certification, showcasing foundational knowledge in AI and machine learning concepts on Azure.",
+    //     icon: "🤖",
+    //     button: { text: "View Certificate", link: "#" },
+    //   },
+    {
+        title: "Top 10",
+        subtitle: "Hackathon Finalist",
+        description: "Recognized as one of the Top 10 finalists in the Code4Change 2.0 Hackathon at VIT for developing a Deadstock app that promotes sustainability by repurposing unused inventory through community exchange.",
+        icon: "🏆",
+    },
 ];
 
 export default function Highlights() {
