@@ -6,15 +6,7 @@ import "./Styles/Skills.css"
 const Skills = () => {
     const [selectedCategory, setSelectedCategory] = useState("All")
     const [hoveredSkill, setHoveredSkill] = useState(null)
-    const [visibleCount, setVisibleCount] = useState(12)
-
-    const toggleVisibleCount = () => {
-        if (visibleCount === 12) {
-            setVisibleCount(filteredSkills.length)
-        } else {
-            setVisibleCount(12)
-        }
-    }
+    const [visibleCount, setVisibleCount] = useState(8)
 
     const skills = [
         {
@@ -213,6 +205,10 @@ const Skills = () => {
         }
     }
 
+    const toggleVisibleCount = () => {
+        setVisibleCount(prev => Math.min(prev + 8, filteredSkills.length));
+    }
+
     return (
         <section className="skills-section" id='skills'>
             <div className="skills-background">
@@ -237,7 +233,7 @@ const Skills = () => {
                             key={category}
                             onClick={() => {
                                 setSelectedCategory(category)
-                                setVisibleCount(12)
+                                setVisibleCount(8)
                             }}
                             className={`category-btn ${selectedCategory === category ? "active" : ""}`}
                         >
@@ -273,11 +269,11 @@ const Skills = () => {
                     ))}
                 </div>
 
-                {/* Show More / Show Less */}
-                {filteredSkills.length > 12 && (
-                    <div className="show-more-container">
-                        <button className="show-more-btn" onClick={toggleVisibleCount}>
-                            {visibleCount === 12 ? "Show More" : "Show Less"}
+                {/* Show More Button */}
+                {visibleCount < filteredSkills.length && (
+                    <div className="load-more-container">
+                        <button className="load-more-btn" onClick={toggleVisibleCount}>
+                            Show More
                         </button>
                     </div>
                 )}

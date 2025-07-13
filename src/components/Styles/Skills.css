@@ -348,20 +348,25 @@
 
 .show-more-container {
   text-align: center;
-  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
 .show-more-btn {
-  background-color: #1f2937;
-  color: white;
-  padding: 10px 20px;
-  border: 2px solid #3b82f6;
-  border-radius: 8px;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  color: #fff;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: "Centra", sans-serif;
 }
 
 .show-more-btn:hover {
-  background-color: #3b82f6;
-  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(170, 54, 124, 0.3);
 }
+
