@@ -117,7 +117,7 @@ const Projects = () => {
         "AWS CloudLearn(LMS)",
         "AskMe App",
         "MERN Predictive-Dashboard",
-        "DKeeper",
+        "Blockchain DKeeper",
         "Leads Management System",
         "Custom Certificate Generator"
       ],
