@@ -16,13 +16,13 @@ const highlights = [
         icon: "☁️",
         button: { text: "View Certificate", link: "https://www.credly.com/badges/6efe0873-f368-45e6-80cb-9b822ce9426c/linked_in_profile" },
     },
-    //   {
-    //     title: "AI-900",
-    //     subtitle: "Microsoft Certified: AI Fundamentals",
-    //     description: "Earned the Microsoft AI-900 certification, showcasing foundational knowledge in AI and machine learning concepts on Azure.",
-    //     icon: "🤖",
-    //     button: { text: "View Certificate", link: "#" },
-    //   },
+      {
+        title: "AI-900",
+        subtitle: "Microsoft Certified: AI Fundamentals",
+        description: "Earned the Microsoft AI-900 certification, showcasing foundational knowledge in AI and machine learning concepts on Azure.",
+        icon: "🤖",
+        button: { text: "View Certificate", link: "https://learn.microsoft.com/api/credentials/share/en-gb/MayankPandey-6719/5B3CBFB01A7A3EE8?sharingId=4631F69937ADB8FB" },
+      },
     {
         title: "Top 10",
         subtitle: "Hackathon Finalist",
