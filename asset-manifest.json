@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.d913c43e.css",
-    "main.js": "/Personal-Portfolio/static/js/main.ab3a6152.js",
+    "main.css": "/Personal-Portfolio/static/css/main.1e033317.css",
+    "main.js": "/Personal-Portfolio/static/js/main.9e00bcf8.js",
     "static/js/453.b21437c2.chunk.js": "/Personal-Portfolio/static/js/453.b21437c2.chunk.js",
     "static/media/header-img.gif": "/Personal-Portfolio/static/media/header-img.91fa42bf49b850570489.gif",
     "static/media/project-img4.png": "/Personal-Portfolio/static/media/project-img4.8b07890164d4e3da4dea.png",
@@ -22,16 +22,19 @@
     "static/media/CentraNo2-Book.ttf": "/Personal-Portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
     "static/media/ContactCard.png": "/Personal-Portfolio/static/media/ContactCard.6b455d633a586c8589aa.png",
     "static/media/footer-bg.png": "/Personal-Portfolio/static/media/footer-bg.7bd67c0f73571d0acc02.png",
+    "static/media/reingames-logo.png": "/Personal-Portfolio/static/media/reingames-logo.9a9cd5504f31d9e2c8d7.png",
     "static/media/contact-img.svg": "/Personal-Portfolio/static/media/contact-img.87eac2b29352fa01abb2f9510ef6ac7e.svg",
     "static/media/nav-icon4.png": "/Personal-Portfolio/static/media/nav-icon4.fa6217166343b80bc032.png",
+    "static/media/rngplay-logo.png": "/Personal-Portfolio/static/media/rngplay-logo.415b9425d28e8817a0c1.png",
+    "static/media/simpech-logo.png": "/Personal-Portfolio/static/media/simpech-logo.449d330ebe26e34a10be.png",
     "index.html": "/Personal-Portfolio/index.html",
     "static/media/nav-icon1.svg": "/Personal-Portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.d913c43e.css.map": "/Personal-Portfolio/static/css/main.d913c43e.css.map",
-    "main.ab3a6152.js.map": "/Personal-Portfolio/static/js/main.ab3a6152.js.map",
+    "main.1e033317.css.map": "/Personal-Portfolio/static/css/main.1e033317.css.map",
+    "main.9e00bcf8.js.map": "/Personal-Portfolio/static/js/main.9e00bcf8.js.map",
     "453.b21437c2.chunk.js.map": "/Personal-Portfolio/static/js/453.b21437c2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d913c43e.css",
-    "static/js/main.ab3a6152.js"
+    "static/css/main.1e033317.css",
+    "static/js/main.9e00bcf8.js"
   ]
 }
