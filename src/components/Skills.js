@@ -130,6 +130,14 @@ const Skills = () => {
             icon: "📱",
         },
         {
+            name: "Swift",
+            category: "Mobile",
+            level: "Intermediate",
+            color: "#f05138",
+            description: "Native iOS development",
+            icon: "🍎",
+        },
+        {
             name: "Node.js",
             category: "Backend",
             level: "Intermediate",

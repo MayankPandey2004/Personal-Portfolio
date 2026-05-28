@@ -5,8 +5,8 @@ import "./Styles/Highlights.css"
 const highlights = [
     {
         title: "Work Experience",
-        subtitle: "Interned at 3 Companies",
-        description: "Acquired hands-on experience in full-stack development, game development, and mobile app development through internships at three companies.",
+        subtitle: "Interned at 4 Companies",
+        description: "Hands-on experience across iOS engineering, full-stack development, game backends, and mobile apps at Mercari, RNGPlay, Simpech, and Rein Games.",
         icon: "💼",
     },
     {
